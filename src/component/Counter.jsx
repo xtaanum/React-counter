@@ -11,16 +11,20 @@ const Counter = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center gap-5">
-      <p>Count: {count}</p>
-      <div className="flex flex-row gap-5">
-        <button className="btn btn-primary" onClick={handleIncrease}>
-          Increase Count
-        </button>
+    <div>
 
-        <button className="btn btn-secondary" onClick={handleDecrease}>
-          Another Button
-        </button>
+      <div className="card bg-neutral text-neutral-content w-96 ">
+        <div className="card-body items-center text-center">
+          <h2 className="card-title">Counter: {count} </h2>
+          <div className="card-actions justify-end">
+            <button className="btn btn-primary" onClick={handleIncrease}>
+              Increase
+            </button>
+            <button className="btn btn-secondary" onClick={handleDecrease}>
+              Decrease
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
