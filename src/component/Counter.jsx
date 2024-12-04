@@ -13,7 +13,7 @@ const Counter = () => {
   return (
     <div>
 
-      <div className="card bg-neutral text-neutral-content w-96 ">
+      <div className="card bg-neutral text-neutral-content w-96 mx-auto my-20 ">
         <div className="card-body items-center text-center">
           <h2 className="card-title">Counter: {count} </h2>
           <div className="card-actions justify-end">
